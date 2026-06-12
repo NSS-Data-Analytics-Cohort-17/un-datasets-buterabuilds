@@ -10,18 +10,18 @@
      - rename the file to `internet_use.csv`
      - open it with a text editor (**not excel**) and take a look
 
-2.	Create a `notebooks` folder and launch a Jupyter Notebook in this folder. Give it a meaningful name.  
+3.	Create a `notebooks` folder and launch a Jupyter Notebook in this folder. Give it a meaningful name.  
  - **IMPORTANT:**  You are likely to get errors along the way. When you do, read the errors to try to understand what is happening and how to correct it.
   - Use markdown cells to record your answers to any questions asked in this exercise. On the menu bar, you can toggle the cell type from `Code` to `Markdown`.
-3.	Import the required packages with their customary aliases as follows:
+4.	Import the required packages with their customary aliases as follows:
 
     `import pandas as pd`   
     `import numpy as np`  
     `import matplotlib.pyplot as plt`  
     `import seaborn as sns`
-4.	Using the pandas `read_csv()` method, read the GDP dataset into your notebook as a DataFrame called `gdp_df`. Take a look at the first few and last few rows to familiarize yourself with what is contained in this dataset.
-5. How many rows and columns are in `gdp_df`? What are the data types of each column?
-6. Drop the `Value Footnotes` column and rename the remaining three to 'Country', 'Year', and 'GDP_Per_Capita'.
+5.	Using the pandas `read_csv()` method, read the GDP dataset into your notebook as a DataFrame called `gdp_df`. Take a look at the first few and last few rows to familiarize yourself with what is contained in this dataset.
+6. How many rows and columns are in `gdp_df`? What are the data types of each column?
+7. Drop the `Value Footnotes` column and rename the remaining three to 'Country', 'Year', and 'GDP_Per_Capita'.
 7. How many countries have data for all years? Which countries are missing many years of data? Look at the number of observations per year. What do you notice? 
 8. In this question, you're going to create some plots to show the distribution of GDP per capita for the year 2020. Go to the Python Graph Gallery (https://www.python-graph-gallery.com/) and look at the different types of plots under the Distribution section. Create a histogram, a density plot, a boxplot, and a violin plot. What do you notice when you look at these plots? How do the plots compare and what information can you get out of one type that you can't necessarily get out of the others?
 9. What was the median GDP per capita value in 2020?
